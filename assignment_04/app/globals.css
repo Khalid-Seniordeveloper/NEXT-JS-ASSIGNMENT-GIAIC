@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Qwitcher+Grypen:wght@400;700&display=swap');
 
 html {
   font-size: 62.5%;
@@ -9,15 +10,34 @@ html {
 .view{
   padding-left: 1rem;
 }
+.nav-list{
+font-family: "Dancing Script", cursive;
+color: #FF5E5B;
+}
+.nav-container{
+  width: 100%;
+  height: 7rem;
+  background-color: #FFED66;
+
+}
+.name{
+  color: #FF5E5B;
+font-family: "Dancing Script", cursive;
+
+}
 .view button{
   border: 0;
   border-radius: 10px;
   padding: 1rem;
   background-color:#FFFFEA;
   color:#00CECB;
-   font-size: 1.3rem
+   font-size: 1.3rem;
+transition: .5s;
 }
-
+.view button:hover{
+  background-color: #FF5E5B;
+  color: #FFFFEA;
+}
 .image-container {
   width: 100%;
   height: 17rem;
@@ -52,6 +72,7 @@ body{
   font-size: 2.3rem;
   margin: 0;
 color:#FF5E5B;
+font-family: "Dancing Script", cursive;
 
 }
 .head{
@@ -69,6 +90,7 @@ color:#FF5E5B;
 }
 .blog-description h3{
 font-size: 1.3rem;
+font-family: "Dancing Script", cursive;
 
 color:#FF5E5B;
 }
