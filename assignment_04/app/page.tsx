@@ -1,6 +1,6 @@
 import Image from "next/image"
 import tshirt from "../app/assets/tshirt.jpeg"
-import jeans from "../app/assets/jeans.jpeg"
+import jeans from "../app/assets/jeans.webp"
 import sho from "../app/assets/sho.jpeg"
 import watch from "../app/assets/watch.jpeg"
 import hat from "../app/assets/hat.jpeg"
@@ -36,7 +36,8 @@ function Home(){
 <div className="blog-title"><h1>Jeans</h1></div>
 <div className="blog-description"><h3>Please click on view more to get more information about it ...</h3></div>
 
-<div  className="view"><button>View More</button></div>
+<div  className="view"><Link href={'/blogtwo'}><button>View More</button></Link></div>
+
 
 
 </div>
@@ -50,7 +51,8 @@ function Home(){
 
 <div className="blog-title"><h1>Shoes</h1></div>
 <div className="blog-description"><h3>Please click on view more to get more information about it ...</h3></div>
-<div  className="view"><button>View More</button></div>
+<div  className="view"><Link href={'/blogthree'}><button>View More</button></Link></div>
+
 
 
 </div>
@@ -70,7 +72,8 @@ function Home(){
 <div><Image src={watch} alt = 'no image'  className="image-container"/></div>
 <div className="blog-title"><h1>Watch</h1></div>
 <div className="blog-description"><h3>Please click on view more to get more information about it ...</h3></div>
-<div  className="view"><button>View More</button></div>
+<div  className="view"><Link href={'/blogfour'}><button>View More</button></Link></div>
+
 
 
 </div>
@@ -83,7 +86,7 @@ function Home(){
 
 <div className="blog-title"><h1>Hat</h1></div>
 <div className="blog-description"><h3>Please click on view more to get more information about it ...</h3></div>
-<div  className="view"><button>View More</button></div>
+<div  className="view"><Link href={'/blogfive'}><button>View More</button></Link></div>
 
 
 </div>
@@ -97,7 +100,8 @@ function Home(){
 
 <div className="blog-title"><h1>Gaming Laptop</h1></div>
 <div className="blog-description"><h3>Please click on view more to get more information about it ...</h3></div>
-<div  className="view"><button>View More</button></div>
+<div  className="view"><Link href={'/blogsix'}><button>View More</button></Link></div>
+
 
 
 </div>
