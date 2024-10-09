@@ -12,18 +12,31 @@ html {
 }
 .nav-list{
 font-family: "Dancing Script", cursive;
-color: #FF5E5B;
+color: #FFFFEA;
+}
+.nav-list li{
+  transition: .3s;
+
 }
 .nav-container{
   width: 100%;
   height: 7rem;
-  background-color: #FFED66;
+  background-color: #00CECB;
 
 }
 .name{
-  color: #FF5E5B;
+  color: #FFFFEA;
 font-family: "Dancing Script", cursive;
+transition: .3s;
+}
+.name:hover{
+  color:#0a157a;
+  cursor: pointer;
 
+}
+.nav-list li:hover{
+  color: #0a157a;
+  cursor: pointer;
 }
 .view button{
   border: 0;
@@ -38,15 +51,18 @@ transition: .5s;
   background-color: #FF5E5B;
   color: #FFFFEA;
 }
+.nested-image {
+  width: 35rem;
+}
 .image-container {
   width: 100%;
-  height: 17rem;
+  height: 23rem;
   background-color:#00CECB;
 }
 
 .blog-container {
   /* border: 3px solid #4b0082; */
-  border-radius: 10px;
+  border-radius: 5px;
   width: 25rem;
   height: 39rem;
   background-color: #FFED66;
@@ -130,3 +146,35 @@ color:#FF5E5B;
   }
 }
 
+
+@media (max-width : 670px){
+  .nav-list{
+    font-size: 1.4rem;
+    gap: 3rem;
+  }
+  .name {
+
+    font-size: 1.5rem;
+  }
+}
+@media(max-width : 425px){
+  .nav-list{
+    font-size: 1.3rem;
+    gap:1.7rem;
+  }
+ 
+
+}
+@media(max-width : 345px){
+  .name{
+  display: none;
+  }
+  .nav-container{
+    display: flex;
+    justify-content: center;
+  }
+  .nav-list{
+    font-size: 1.5rem;
+    gap: 2remb;
+  }
+}
